@@ -32,10 +32,11 @@ AUC - 0.9839591 on validation set
 From curve i see, 0.7 threshold (log value) is really good cut off value for classification
 
 *****************Plots*****************
-# Plots are in plots directory
 ![Accuracy Curve](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AccuracyPlot_Valid.png)
+![Area Curve](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AreaCurve_Valid.png)
+![Dataset](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/Dataset.png)
 
-*****************TODO*****************
+##### *****************TODO*****************
 If i use --binary flag, on what bases does it choose right probability threshold for classification?
 
 1. Use hinge loss
