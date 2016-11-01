@@ -32,7 +32,8 @@ AUC - 0.9839591 on validation set
 From curve i see, 0.7 threshold (log value) is really good cut off value for classification
 
 *****************Plots*****************
-# Plots are plots directory
+# Plots are in plots directory
+![ScreenShot](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AccuracyPlot_Valid.png)
 
 *****************TODO*****************
 If i use --binary flag, on what bases does it choose right probability threshold for classification?
