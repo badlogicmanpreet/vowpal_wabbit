@@ -23,7 +23,6 @@
 1. Accuracy achieved so far is 67.2
 2. Precision - 0.94766
 3. Recall - 0.98851
-##### ** Used perf tool to get the values for ACC, precision and recall
 4. perf -ACC -files labels p_out.txt
 5. perf -PRE -files labels p_out.txt
 6. perf -REC -files labels p_out.txt
@@ -31,7 +30,6 @@
 AUC - 0.9839591 on validation set
 From curve i see, 0.7 threshold (log value) is really good cut off value for classification
 
-*****************Plots*****************
 ![Accuracy Curve](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AccuracyPlot_Valid.png)
 ![Area Curve](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AreaCurve_Valid.png)
 ![Dataset](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/Dataset.png)
