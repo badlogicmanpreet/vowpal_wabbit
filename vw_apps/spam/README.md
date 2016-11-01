@@ -1,6 +1,6 @@
 # ADCG SS14 Challenge 02 - Spam Mails Detection
 
-##### Notes 
+## Notes 
 1. Dataset directory contains Training, Testing files and label file for training set.
 2. Extraction of subject and content is done using ExtractContent to prepare for VW
 3. Extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
@@ -19,14 +19,14 @@
 
 #####  Plots_Metrics.R helps to plot data and curves
 
-*****************Metrics*****************
-Accuracy achieved so far is 67.2
-Precision - 0.94766
-Recall - 0.98851
-** Used perf tool to get the values for ACC, precision and recall
-perf -ACC -files labels p_out.txt
-perf -PRE -files labels p_out.txt
-perf -REC -files labels p_out.txt
+##### *****************Metrics*****************
+1. Accuracy achieved so far is 67.2
+2. Precision - 0.94766
+3. Recall - 0.98851
+##### ** Used perf tool to get the values for ACC, precision and recall
+4. perf -ACC -files labels p_out.txt
+5. perf -PRE -files labels p_out.txt
+6. perf -REC -files labels p_out.txt
 
 AUC - 0.9839591 on validation set
 From curve i see, 0.7 threshold (log value) is really good cut off value for classification
