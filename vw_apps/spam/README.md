@@ -1,23 +1,23 @@
 ADCG SS14 Challenge 02 - Spam Mails Detection
 =============================================
 #####  dataset directory contains Training, Testing files and label file for training set.
-# extraction of subject and content is done using ExtractContent to prepare for VW
-# extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
-# above input is split into train and validate set of 2000, 500 records respectively, files in input directory
-# actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
+#####  extraction of subject and content is done using ExtractContent to prepare for VW
+#####  extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
+#####  above input is split into train and validate set of 2000, 500 records respectively, files in input directory
+#####  actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
 
-# VWFormatter is used for cleanup and formatting emails to VW input format, 'spam_v3.txt' file is generated and shuffled
+#####  VWFormatter is used for cleanup and formatting emails to VW input format, 'spam_v3.txt' file is generated and shuffled
 to create 'spam_v3_shuffled_2500.txt'
-# labels are converted to 1 and -1, where -1 represents spam and 1 represents ham
-# vw_run.py shows various models run with sqaured, logisitic and hinge loss. Logistic and Hinge does good as expected.
-# predictions are stored in p_out as log values, but have been converted to binary for kaggle using --binary flag. Files
+#####  labels are converted to 1 and -1, where -1 represents spam and 1 represents ham
+#####  vw_run.py shows various models run with sqaured, logisitic and hinge loss. Logistic and Hinge does good as expected.
+#####  predictions are stored in p_out as log values, but have been converted to binary for kaggle using --binary flag. Files
 are present in output directory
-# true labels are stored in labels file
-# KaggleResult.py converts the the output to desired kaggle format
+#####  true labels are stored in labels file
+#####  KaggleResult.py converts the the output to desired kaggle format
 
-# All the models are stored in model directory under output
+#####  All the models are stored in model directory under output
 
-# Plots_Metrics.R helps to plot data and curves
+#####  Plots_Metrics.R helps to plot data and curves
 
 *****************Metrics*****************
 Accuracy achieved so far is 67.2
