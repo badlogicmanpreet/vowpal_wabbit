@@ -1,19 +1,19 @@
 # ADCG SS14 Challenge 02 - Spam Mails Detection
 
-1. dataset directory contains Training, Testing files and label file for training set.
-2. extraction of subject and content is done using ExtractContent to prepare for VW
-3. extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
-4. above input is split into train and validate set of 2000, 500 records respectively, files in input directory
-5. actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
+1. Dataset directory contains Training, Testing files and label file for training set.
+2. Extraction of subject and content is done using ExtractContent to prepare for VW
+3. Extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
+4. Above input is split into train and validate set of 2000, 500 records respectively, files in input directory
+5. Actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
 
-#####  VWFormatter is used for cleanup and formatting emails to VW input format, 'spam_v3.txt' file is generated and shuffled
-to create 'spam_v3_shuffled_2500.txt'
-#####  labels are converted to 1 and -1, where -1 represents spam and 1 represents ham
-#####  vw_run.py shows various models run with sqaured, logisitic and hinge loss. Logistic and Hinge does good as expected.
-#####  predictions are stored in p_out as log values, but have been converted to binary for kaggle using --binary flag. Files
-are present in output directory
-#####  true labels are stored in labels file
-#####  KaggleResult.py converts the the output to desired kaggle format
+1. VWFormatter is used for cleanup and formatting emails to VW input format, 'spam_v3.txt' file is generated and shuffled
+   to create 'spam_v3_shuffled_2500.txt'
+2. Labels are converted to 1 and -1, where -1 represents spam and 1 represents ham
+3. vw_run.py shows various models run with sqaured, logisitic and hinge loss. Logistic and Hinge does good as expected.
+4. Predictions are stored in p_out as log values, but have been converted to binary for kaggle using --binary flag. Files
+   are present in output directory
+5. True labels are stored in labels file
+6. KaggleResult.py converts the the output to desired kaggle format
 
 #####  All the models are stored in model directory under output
 
