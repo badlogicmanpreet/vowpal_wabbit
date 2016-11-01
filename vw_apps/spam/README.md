@@ -1,10 +1,10 @@
 # ADCG SS14 Challenge 02 - Spam Mails Detection
-# =============================================
+
 1. dataset directory contains Training, Testing files and label file for training set.
 2. extraction of subject and content is done using ExtractContent to prepare for VW
-#####  extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
-#####  above input is split into train and validate set of 2000, 500 records respectively, files in input directory
-#####  actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
+3. extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
+4. above input is split into train and validate set of 2000, 500 records respectively, files in input directory
+5. actual test file from kaggle without labels is 'kaggle_test_set_1827.txt'
 
 #####  VWFormatter is used for cleanup and formatting emails to VW input format, 'spam_v3.txt' file is generated and shuffled
 to create 'spam_v3_shuffled_2500.txt'
