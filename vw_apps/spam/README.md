@@ -1,6 +1,6 @@
 ADCG SS14 Challenge 02 - Spam Mails Detection
 =============================================
-# dataset directory contains Training, Testing files and label file for training set.
+#####  dataset directory contains Training, Testing files and label file for training set.
 # extraction of subject and content is done using ExtractContent to prepare for VW
 # extracted content is shuffled and stored as 'spam_v3_shuffled_2500.txt'
 # above input is split into train and validate set of 2000, 500 records respectively, files in input directory
@@ -33,7 +33,7 @@ From curve i see, 0.7 threshold (log value) is really good cut off value for cla
 
 *****************Plots*****************
 # Plots are in plots directory
-![ScreenShot](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AccuracyPlot_Valid.png)
+![Accuracy Curve](https://github.com/badlogicmanpreet/vowpal_wabbit/blob/ms_dev/vw_apps/spam/src/plots/AccuracyPlot_Valid.png)
 
 *****************TODO*****************
 If i use --binary flag, on what bases does it choose right probability threshold for classification?
